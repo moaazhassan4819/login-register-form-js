@@ -4,70 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-    <!-- <h1>Register</h1> -->
-
-    <!-- <form onsubmit="registerUser(); return false">
-        <label for="userName">
-            Name: <input type="text" id="userName">
-        </label>
-        <br>
-        <label for="userEmail">
-            Email: <input type="email" id="userEmail">
-        </label>
-        <br>
-        <label for="userPassword">
-            Password: <input type="text" id="userPassword">
-        </label>
-        <br>
-        <button>Register</button>
-    </form> -->
-
-    <!-- <form onsubmit="registerAccount(); return false">
-        <label for="userName">
-            Name: <input type="text" id="userName">
-        </label>
-
-        <label for="userEmail">
-            Email: <input type="text" id="userEmail">
-        </label>
-
-        <label for="userPassword">
-            Password: <input type="text" id="userPassword">
-        </label>
-        <button>Register</button>
-    </form>
-
-    <a href="login.html">
-        Already Have an Account
-    </a> -->
-
-
-    <h1>Register Account</h1>
-
     <form onsubmit="registerAccount(); return false">
-        <label for="userName">
-            UserName: <input type="text" id="userName">
-        </label>
+            <h1>Register Account</h1>
+            <label for="userName">UserName:
+                <div class="input-container">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="userName" placeholder="Username" required>
+                </div> 
+            </label>
 
-        <label for="userEmail">
-            UserEmail: <input type="text" id="userEmail">
-        </label>
+            <label for="userEmail">
+                UserEmail: 
+                <div class="input-container">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" id="userEmail" placeholder="Useremail" required>
+                </div>
+            </label>
 
-        <label for="user`Password">
-            UserPassword: <input type="password" id="userPassword">
-        </label>
-         <p style="color: red;" id="weakPassword"></p>
-        
-        <button>Register</button>
-
-    </form>
-
-    <a href="index.html">
-        Already Have an Account
-    </a>
-
+            <label for="user`Password">
+                UserPassword: 
+                <div class="input-container">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="userPassword" placeholder="Password" required>
+                </div>
+            </label>
+            <p class="login-link" id="weakPassword" ></p>
+            
+            <button>Register</button>
+            
+            <a href="index.html">
+                Already Have an Account ? <span>Sign up</span>
+            </a>
+        </form>
 
     <script src="script.js"></script>
 </body>

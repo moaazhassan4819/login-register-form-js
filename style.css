@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  background-color: #1F2235;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+    color: white;
+    margin-bottom: 10px;
+    line-height: 50px;
+}
+    
+form{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+    padding: 10px;
+    background-color: #2A2E4A;
+}
+
+form label{
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+form label .input-container{
+    background-color: #1F2235;
+    border: 1px solid #FF3B5C;
+    color: white;
+    padding: 5px 15px;
+    margin-top: 6px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    line-height: 30px; 
+    border-radius: 10px;
+    width: 100%;
+}
+
+.input-container i {
+    color: #888;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+form label .input-container input{
+    background-color: #1F2235;
+    border: 1px solid transparent;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    line-height: 30px;   
+}
+
+form label .input-container input:focus{
+    outline: none;
+    background-color: transparent;
+}
+
+form button{
+    background-color: #FF3B5C;
+    color: white;
+    font-size: 22px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #ff2449;
+    transition: all 0.4s ease-in-out;
+}
+
+form p{
+    color: red;
+}
+
+form a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form a span{
+    color: #ff2449;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+form span:hover{
+     color: white;
+}
+
+.dashboard{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 575px) {
+    form{
+        width: 320px;
+    }
+    .dashboard{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 320px) {
+    form{
+        width: 280px;
+    }
+    form label {
+        font-size: 20px;
+    }
+    form label .input-container {
+        padding: 3px 15px;
+    }
+    .input-container i {
+        font-size: 12px;
+    }
+    form button{
+        line-height: 40px;
+        font-size: 20px;
+    }
+    form a{
+        font-size: 14px;
+    }
+    form label .input-container input {
+        font-size: 16px;
+    }
+}
+
+
+
